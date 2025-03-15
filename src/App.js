@@ -11,7 +11,10 @@ import Vision from './components/pages/Vision';
 import Mission from './components/pages/Mission';
 import Psychologists from './components/pages/Psychologists';
 import Blog from './components/pages/Blog';
+<<<<<<< HEAD
 import BlogPost from './components/pages/BlogPost';
+=======
+>>>>>>> 719c234afa10900af3710f18cce8e0da0e400a60
 
 // Components
 import Navbar from './components/common/Navbar';
@@ -30,7 +33,10 @@ function App() {
           <Route path="/misyon" element={<Mission />} />
           <Route path="/psikologlarimiz" element={<Psychologists />} />
           <Route path="/blog" element={<Blog />} />
+<<<<<<< HEAD
           <Route path="/blog/:id" element={<BlogPost />} />
+=======
+>>>>>>> 719c234afa10900af3710f18cce8e0da0e400a60
         </Routes>
         <Footer />
       </Router>

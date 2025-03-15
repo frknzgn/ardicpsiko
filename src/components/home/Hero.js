@@ -65,6 +65,26 @@ const HeroContent = styled(motion.div)`
   }
 `;
 
+<<<<<<< HEAD
+=======
+const TitleContainer = styled(motion.div)`
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 1.5rem;
+`;
+
+const LogoImage = styled.img`
+  height: 3.5rem;
+  width: auto;
+  object-fit: contain;
+  
+  @media (max-width: ${props => props.theme.breakpoints.mobile}) {
+    height: 2.5rem;
+  }
+`;
+
+>>>>>>> 719c234afa10900af3710f18cce8e0da0e400a60
 const HeroTitle = styled(motion.h1)`
   font-size: 3.5rem;
   color: ${props => props.theme.colors.primary};
@@ -166,13 +186,25 @@ const Hero = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
+<<<<<<< HEAD
           <HeroTitle
+=======
+          <TitleContainer
+>>>>>>> 719c234afa10900af3710f18cce8e0da0e400a60
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
+<<<<<<< HEAD
             İç Huzurunuza Giden <span>Yol</span>
           </HeroTitle>
+=======
+            <LogoImage src={logoImage} alt="Ardıç Psikoloji Logo" />
+            <HeroTitle>
+              İç Huzurunuza Giden <span>Yol</span>
+            </HeroTitle>
+          </TitleContainer>
+>>>>>>> 719c234afa10900af3710f18cce8e0da0e400a60
           <HeroSubtitle
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -198,7 +230,11 @@ const Hero = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
+<<<<<<< HEAD
           <img src={logoImage} alt="Ardıç Psikoloji Logo" style={{ maxWidth: '400px' }} />
+=======
+          <img src="/images/hero-image.jpg" alt="Psikolojik danışmanlık" />
+>>>>>>> 719c234afa10900af3710f18cce8e0da0e400a60
         </HeroImage>
       </HeroContainer>
     </HeroSection>
