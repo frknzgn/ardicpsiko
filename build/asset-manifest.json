@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e6c13ad2.css",
+    "main.js": "/static/js/main.1effc947.js",
+    "static/js/453.4e794fbb.chunk.js": "/static/js/453.4e794fbb.chunk.js",
+    "static/media/logo.png": "/static/media/logo.f07ff944ddce1fc00511.png",
+    "static/media/anksiyete-ile-basa-cikma.png": "/static/media/anksiyete-ile-basa-cikma.c9e7879b51db5288c57f.png",
+    "static/media/2025-03-15-anksiyete-ile-basa-cikma.txt": "/static/media/2025-03-15-anksiyete-ile-basa-cikma.d21a6447ccf8e5d519e5.txt",
+    "index.html": "/index.html",
+    "static/media/2025-03-15-deneme-blog.txt": "/static/media/2025-03-15-deneme-blog.3d86f7aa9f351aece898.txt",
+    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
+    "main.1effc947.js.map": "/static/js/main.1effc947.js.map",
+    "453.4e794fbb.chunk.js.map": "/static/js/453.4e794fbb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.1effc947.js"
+  ]
+}
