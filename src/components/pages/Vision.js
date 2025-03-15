@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 const VisionContainer = styled.div`
-  padding-top: 80px;
+  padding-top: 100px;
 `;
 
 const HeroSection = styled.section`
-  padding: 5rem 0;
+  padding: 3rem 0;
   background-color: ${props => props.theme.colors.primary};
   color: ${props => props.theme.colors.lightCream};
   text-align: center;
