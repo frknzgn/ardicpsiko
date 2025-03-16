@@ -22,12 +22,20 @@ const NavWrapper = styled.div`
   padding: 1.5rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  
+  @media (max-width: ${props => props.theme.breakpoints.tablet}) {
+    padding: 1rem;
+  }
 `;
 
 const LogoContainer = styled(motion.div)`
   display: flex;
   align-items: center;
   position: relative;
+  
+  @media (max-width: ${props => props.theme.breakpoints.tablet}) {
+    max-width: 70%;
+  }
 `;
 
 const LogoImg = styled.img`
@@ -36,6 +44,10 @@ const LogoImg = styled.img`
   position: relative;
   border-radius: 5px;
   vertical-align: middle;
+  
+  @media (max-width: ${props => props.theme.breakpoints.tablet}) {
+    height: 60px;
+  }
   
   &:after {
     content: '';
@@ -53,11 +65,16 @@ const LogoImg = styled.img`
 const Divider = styled.div`
   width: 3px;
   min-height: 50px;
-  margin: 0 6px; // 15px'ten 7px'e düşürüldü
+  margin: 0 6px;
   align-self: center;
   display: block;
   background: ${props => props.scrolled ? props.theme.colors.lightCream : props.theme.colors.primary};
   border-radius: 10px;
+  
+  @media (max-width: ${props => props.theme.breakpoints.tablet}) {
+    min-height: 35px;
+    margin: 0 4px;
+  }
 `;
 
 const Logo = styled(Link)`
@@ -69,9 +86,19 @@ const Logo = styled(Link)`
   letter-spacing: 1px;
   display: flex;
   align-items: center;
-  gap: 0 px; 
+  gap: 0px;
   color: ${props => props.scrolled ? props.theme.colors.lightCream : props.theme.colors.primary};
   text-shadow: ${props => props.scrolled ? '0 1px 2px rgba(0,0,0,0.3)' : '0 1px 2px rgba(0,0,0,0.1)'};
+  
+  @media (max-width: ${props => props.theme.breakpoints.tablet}) {
+    font-size: 1.5rem;
+  }
+  
+  span {
+    @media (max-width: ${props => props.theme.breakpoints.mobile}) {
+      font-size: 1.2rem;
+    }
+  }
   
   &:after {
     content: '';
@@ -84,6 +111,10 @@ const Logo = styled(Link)`
     transform: scaleX(0.7);
     transform-origin: right;
     transition: transform 0.3s ease;
+    
+    @media (max-width: ${props => props.theme.breakpoints.tablet}) {
+      display: none;
+    }
   }
   
   &:hover:after {
