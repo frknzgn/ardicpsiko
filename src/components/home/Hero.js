@@ -11,6 +11,13 @@ const HeroSection = styled.section`
   position: relative;
   background-color: ${props => props.theme.colors.contrast};
   overflow: hidden;
+  padding-top: 0;
+  
+  @media (max-width: ${props => props.theme.breakpoints.tablet}) {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 120px; /* Navbar için yer açıyoruz */
+  }
   
   &:before {
     content: '';
